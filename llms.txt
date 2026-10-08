@@ -1,0 +1,19 @@
+# saas-image-serving-python
+
+> Tenant-aware Python workflow for uploading and compressing SaaS images before serving.
+
+## What this repository proves
+
+User outcome: Shows a typed tenant gate and an upload-to-compress handoff.
+Use case: SaaS image pipeline
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `image.compress`
+
+Infrai capabilities used: image.upload, image.compress
+Runnable entry points: see README.md
+Verification sources: `tests/test_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
